@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#fullfront {
+    display: flex;
+    height: 100vh;
+}
+
+#right-front {
+    display: flex;
+    flex-direction: column;
+}
+
+.frontpanel {
+    flex: 1;
+    border: 10px solid white;
+    
+}
+
+#top-right {
+    flex: 1;
+    border: 3px solid blue;
+}
+
+#bottom-right {
+    flex: 1;
+    border: 3px solid blue;
+}
