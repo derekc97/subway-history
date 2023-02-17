@@ -1,6 +1,8 @@
 body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #fullfront {
@@ -51,4 +53,9 @@ body {
 
 .front-options:hover {
     transform: scale(1.2);
+}
+
+.front-options > a {
+    text-decoration: none;
+    color: white;
 }
