@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -9,18 +9,30 @@ body {
     font-family: 'Helvetica', sans-serif;
 }
 
+.stop {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 50px;
+    z-index: 10;
+}
+
 .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 20px;
+    width: 100%;
 }
 
 .container {
     padding: 10px 50px;
     position: relative;
-    width: 50%;
-    background: rgba(0,0,0,0.3);
-    margin-left: 40%;;
+    width: 80%;
+    margin-left: 20%;
 }
 
 .text-box {
@@ -36,8 +48,86 @@ body {
     position: absolute;
     width: 10px;
     height: 100%;
-    background-color: red;
+    background-color: #e92529;
     top: 0px;
-    left: 10%;
+    left: 20%;
     margin-left: -3px;
+    animation: movesubway 5s ease-in-out forwards;
 }
+
+@keyframes movesubway {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.text-box h2 {
+    font-weight: 600;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 40px;
+    }
+
+    .container {
+        width: 100px;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+
+    .text-box {
+        font-size: 13px;
+        width:275px;
+        margin-left: -70px;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .stop {
+        left: -45px;
+    }
+
+
+}
+
+@media screen and (max-width: 1600px) and (min-width: 601px) {
+    .timeline {
+        margin: 30px auto;
+    }
+
+    .timeline::after {
+        left: 60px;
+    }
+
+    .container {
+        width: 200px;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .text-box {
+        width: 500px;
+        margin-left: -105px;
+    }
+    
+    .stop {
+        left: -88px;
+    }
+}
+    
