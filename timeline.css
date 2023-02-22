@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2e364a;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: rgba(0,0,0,0.3);
+    margin-left: 40%;;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: white;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.timeline::after {
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: red;
+    top: 0px;
+    left: 10%;
+    margin-left: -3px;
+}
