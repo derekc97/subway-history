@@ -3,7 +3,7 @@
 }
 
 body {
-    background: darkblue;
+    background: black;
     font-family: 'Helvetica', sans-serif;
 }
 
@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .timeline {
@@ -23,23 +23,27 @@ body {
 
 .icon {
     display: flex;
-    background: linear-gradient(to right, #3594cc 45%, #b1dcf5 45%, #b1dcf5 45%, #3594cc 50%);
     order: 2;
-    text-align: center;
-    color: white;
-    font-size: 28px;
-    flex-basis: 100px;
+    background-color: red;
+    flex-basis: 80px;
+    border-right: 30px solid black;
+    border-left: 30px solid black;
+    height: 150px;
 }
 
 .icon > span {
-    font-size: 20px;
     margin: auto;
-    background: red;
-    border-radius: 50px;
+    background: white;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
-    line-height: 40px;
     border: 5px solid black;
+}
+
+.icon > span:hover {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    background: bisque;
 }
 
 .info {
@@ -57,6 +61,7 @@ body {
 
 .info:hover {
     background: bisque;
+    cursor: pointer;
 }
 
 .info h2 {
