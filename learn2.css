@@ -28,7 +28,6 @@ body {
     flex-basis: 80px;
     border-right: 30px solid black;
     border-left: 30px solid black;
-    height: 150px;
 }
 
 .icon > span {
@@ -42,7 +41,7 @@ body {
 
 .icon > span:hover {
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     background: bisque;
 }
 
