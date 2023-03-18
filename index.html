@@ -4,34 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Subway Timeline</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="fullfront">
-        <div id="left-front" class="frontpanel">
-            
+    <div class="homepage-container">
+        <div id="home-left" class="homepage-child">
+            <div></div>
         </div>
-        <div id="right-front" class="frontpanel">
-            <div id="top-right">
-                <div class="herotitle">History of the NYC Subway System</div>
+        <div id="home-right" class="homepage-child">
+            <div class="top-right right-child">   
+                <div class="hero-text">History of the NYC Subway</div>
             </div>
-            <div id="bottom-right">
-                <div class="front-options"><a href="timeline.html">Start</a></div>
-                <div class="front-options"><a href="about.html">About</a></div>
-                <div class="front-options"><a href="learn.html">Learn More</a></div>
+            <div class="bottom-right right-child">
+                <div class="option" id="start">Start</div>
+                <div class="option" id="about">About</div>
+                <div class="option" id="museum">NYCT Museum</div>
             </div>
         </div>
     </div>
-
-    <div class="timeline">
-
+    <div class="timeline-container">
+        <div class="timeline-event">
+            <div class="event-child track">
+                <div class="trackline"></div>
+            </div>
+            <div class="event-child event-info" id="event1">
+                <div class="event-date">1884</div>
+                <div class="event-short-desc">First underground subway plans were approved in order to combat weather conditions.</div>
+                <div class="learn-more" id="learn1">Learn more...</div>
+                <div class="expand-div" id="expand1">
+                    <p class="expand-info">Although plans for an underground subway were initially made in 1869 by Alfredy Ely Beach, it would take until 1884 for things to be approved after New Yorkers realized the benefits of an underground system. </p>
+                    <img class="image" src="./img/1884.jpeg">
+                </div>
+            </div>
+        </div>
+        <div class="timeline-event">
+            <div class="event-child track">
+                <div class="trackline"></div>
+            </div>
+            <div class="event-child event-info" id="event2">
+                <div class="event-date">1904</div>
+                <div class="event-short-desc">Subway plans finish and open to the public.</div>
+                <div class="learn-more" id="learn2">Learn more...</div>
+                <div class="expand-div" id="expand2">
+                    <p class="expand-info">The subway first opens at City Hall station with hundreds of New Yorkers paying 4 cents to view the inaugural ride. The subway would be leased to the IRT (Interborough Rapid Transit company), a name still known by older New Yorkers to this day. This subway line would run from City Hall to 145th Street and would be referred to as "City Hall to Harlem in 15 Minutes" allowing New Yorkers to commute and explore further out of the city.
+                    </p>
+                    <img class="image" src="./img/1904.webp">
+                </div>
+            </div>
+        </div>
+        <div class="timeline-event">
+            <div class="event-child track">
+                <div class="trackline"></div>
+            </div>
+            <div class="event-child event-info" id="event3">
+                <div class="event-date">1908</div>
+                <div class="event-short-desc">Brooklyn-Manhattan Transit (BMT) enters the game.</div>
+                <div class="learn-more" id="learn3">Learn more...</div>
+                <div class="expand-div" id="expand3">Another privately owned company enters the subway system, taking over different lines from the IRT. As seen in the name, BMT operated mainly in Brookyln and Manhattan whereas the IRT operated in Manhattan, going to the Bronx. In todays te</div>
+            </div>
+        </div>
+        <div class="timeline-event"></div>
+        <div class="timeline-event"></div>
+        <div class="timeline-event"></div>
     </div>
-
-
 </body>
 </html>
