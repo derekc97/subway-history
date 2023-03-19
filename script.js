@@ -1,7 +1,9 @@
 let body = document.querySelector("body");
 let homepageContainer = document.querySelector(".homepage-container");
 let timelineContainer = document.querySelector(".timeline-container");
+let aboutContainer = document.querySelector(".about-container");
 let startButton = document.querySelector("#start");
+let aboutButton = document.querySelector("#about");
 
 // let button = document.createElement("button");
 // button.textContent = "start time";
@@ -11,6 +13,11 @@ let startButton = document.querySelector("#start");
 startButton.addEventListener("click", ()=> {
     timelineContainer.style.display = "block";
     homepageContainer.style.display = "none";
+})
+
+aboutButton.addEventListener("click", ()=> {
+    homepageContainer.style.display = "none";
+    aboutContainer.style.display = "flex";
 })
 
 //ONE!!!
@@ -128,10 +135,19 @@ let expandArray = document.querySelectorAll(".expand-div");
 let learnArray = document.querySelectorAll(".learn-more")
 console.log(expandArray);
 
-let homeButtonTl = document.querySelector(".homeButton");
-homeButtonTl.addEventListener("click", () => {
-    timelineContainer.style.display = "none";
-    homepageContainer.style.display = "flex";
+let homeButtonTl = document.querySelectorAll(".homeButton");
+
+for (let i = 0; i < homeButtonTl.length; i++) {
+    homeButtonTl[i].addEventListener("click", () => {
+        timelineContainer.style.display = "none";
+        homepageContainer.style.display = "flex";
+        aboutContainer.style.display = "none";
+    })
+}
+
+let gitButton = document.querySelector("#github");
+gitButton.addEventListener("click", ()=> {
+    window.open("https://github.com/derekc97/subway-history");
 })
 
 

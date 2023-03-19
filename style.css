@@ -47,11 +47,13 @@ body {
 
 .option {
     cursor: pointer;
+    font-size: 20px;
 }
 
 .option:hover {
     transform: scale(1.3);
     transform-origin: left;
+    text-decoration: underline;
 }
 
 .timeline-container {
@@ -178,4 +180,32 @@ body {
 
 .homeButton:hover {
     text-decoration: underline;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    display: none;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.about-hero {
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.about-image {
+    margin-bottom: 30px;
+}
+
+.about-image > img {
+    width: 100%;
+}
+
+#github > img {
+    height: 25px;
 }
