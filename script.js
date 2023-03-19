@@ -47,10 +47,91 @@ learnThree.addEventListener("click", ()=> {
     expandThree.classList.add("shown");
 })
 
+//FOUR
+let eventFour = document.querySelector("#event4");
+let learnFour = document.querySelector("#learn4");
+let expandFour = document.querySelector("#expand4");
 
+learnFour.addEventListener("click", ()=> {
+    learnFour.classList.add("hidden-learn");
+    expandFour.classList.remove("expand-div");
+    expandFour.classList.add("shown");
+})
+
+//FIVE
+let eventFive = document.querySelector("#event5");
+let learnFive = document.querySelector("#learn5");
+let expandFive = document.querySelector("#expand5");
+
+learnFive.addEventListener("click", ()=> {
+    learnFive.classList.add("hidden-learn");
+    expandFive.classList.remove("expand-div");
+    expandFive.classList.add("shown");
+})
+
+//SIX
+let eventSix = document.querySelector("#event6");
+let learnSix = document.querySelector("#learn6");
+let expandSix = document.querySelector("#expand6");
+
+learnSix.addEventListener("click", ()=> {
+    learnSix.classList.add("hidden-learn");
+    expandSix.classList.remove("expand-div");
+    expandSix.classList.add("shown");
+})
+
+//SEVEN
+let eventSeven = document.querySelector("#event7");
+let learnSeven = document.querySelector("#learn7");
+let expandSeven = document.querySelector("#expand7");
+
+learnSeven.addEventListener("click", ()=> {
+    learnSeven.classList.add("hidden-learn");
+    expandSeven.classList.remove("expand-div");
+    expandSeven.classList.add("shown");
+})
+
+//EIGHT
+let eventEight = document.querySelector("#event8");
+let learnEight = document.querySelector("#learn8");
+let expandEight = document.querySelector("#expand8");
+
+learnEight.addEventListener("click", ()=> {
+    learnEight.classList.add("hidden-learn");
+    expandEight.classList.remove("expand-div");
+    expandEight.classList.add("shown");
+})
+
+//NINE
+let eventNine = document.querySelector("#event9");
+let learnNine = document.querySelector("#learn9");
+let expandNine = document.querySelector("#expand9");
+
+learnNine.addEventListener("click", ()=> {
+    learnNine.classList.add("hidden-learn");
+    expandNine.classList.remove("expand-div");
+    expandNine.classList.add("shown");
+})
+
+//TEN
+let eventTen = document.querySelector("#event10");
+let learnTen = document.querySelector("#learn10");
+let expandTen = document.querySelector("#expand10");
+
+learnTen.addEventListener("click", ()=> {
+    learnTen.classList.add("hidden-learn");
+    expandTen.classList.remove("expand-div");
+    expandTen.classList.add("shown");
+})
 
 let expandArray = document.querySelectorAll(".expand-div");
 let learnArray = document.querySelectorAll(".learn-more")
 console.log(expandArray);
+
+let homeButtonTl = document.querySelector(".homeButton");
+homeButtonTl.addEventListener("click", () => {
+    timelineContainer.style.display = "none";
+    homepageContainer.style.display = "flex";
+})
 
 

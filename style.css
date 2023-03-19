@@ -158,3 +158,24 @@ body {
     margin-top: 20px;
     width: 50%;
 }
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.homeButton {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.homeButton:hover {
+    text-decoration: underline;
+}
